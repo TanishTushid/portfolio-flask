@@ -1,0 +1,8 @@
+feature of the login page
+
+login page
+accept username & password
+
+session store
+redirect welcome page
+logout
