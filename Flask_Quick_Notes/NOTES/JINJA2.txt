@@ -1,0 +1,18 @@
+
+JINJA 2
+
+1-> python values
+{{variable}}
+<p> Welcome {{name}} </p>
+
+2-> conditionals
+{%if%}...{% endif%}
+example->
+is_topper = True
+
+{%if is_topper%}
+<p> you are a topper</p>
+
+{%else%}
+<p> you need to work hard</P>
+{%endif%}
