@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Even-Odd Sorter</title>
+</head>
+<body>
+    <h1>Even and Odd Number Sorter</h1>
+    <form method="POST">
+        <label>Enter numbers (comma-separated):</label><br>
+        <input type="text" name="numbers" required>
+        <input type="submit" value="Sort">
+    </form>
+
+    {% if error %}
+        <p style="color:red;">{{ error }}</p>
+    {% endif %}
+
+    {% if even or odd %}
+        <h3>Even Numbers:</h3>
+        <p>{{ even }}</p>
+
+        <h3>Odd Numbers:</h3>
+        <p>{{ odd }}</p>
+    {% endif %}
+</body>
+</html>
